@@ -1,0 +1,66 @@
+.header{
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .sideBar{
+    position: relative;
+    top: 20%;
+  }
+
+  .logoTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  .logo{
+    width: 410px;
+    height: 138.141px;
+  }
+.logoTitle h2{
+    color: white;
+    font-size: 4rem;
+}
+
+.time-Counter{
+    background-color:#8a1538;
+    text-align: center;
+    padding: 20px;
+    font-family: graphik,Helvetica,Arial,sans-serif;
+    font-size: 1.8rem;
+    color:wheat ;
+}
+.timeHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matchTable{
+  background-color: #8a1538;
+}
+
+.container{
+  padding: 0;
+}
