@@ -1,0 +1,24 @@
+DROP TABLE IF EXISTS teams CASCADE;
+DROP TABLE IF EXISTS activities CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+
+CREATE TABLE teams (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) UNIQUE NOT NULL,
+  image TEXT
+);
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  username VARCHAR(100) UNIQUE NOT NULL,
+  password_hash TEXT NOT NULL
+);
+CREATE TABLE activities(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100)  NOT NULL,
+  category VARCHAR(100) NOT NULL,
+  location TEXT  NOT NULL,
+  description TEXT  NOT NULL,
+  image TEXT  NOT NULL,
+  price TEXT,
+  user_id SERIAL REFERENCES users (id) ON DELETE CASCADE
+);

@@ -3,8 +3,8 @@
     background-color: black;
     height: 75vh;
     min-height: 25rem;
-    width: 100%;
     overflow-y: hidden;
+
 }
 
 .header video {
@@ -38,9 +38,10 @@
     width: 410px;
     height: 138.141px;
   }
-.logoTitle h2{
+.logoTitle h2,H1 {
     color: white;
-    font-size: 4rem;
+    text-shadow: 0 0 6px #2f3759;
+    font-size: 6rem;
 }
 
 .time-Counter{
@@ -63,4 +64,33 @@
 
 .container{
   padding: 0;
+}
+
+.oh{
+  background-color: #8a1538;
+}
+.ob{
+	font-size: 2.5rem;
+  background-color: #8a1538;
+  text-align: center;
+}
+
+.navlink{
+  color: white !important;
+}
+.navlink:hover{
+  color: wheat !important;
+}
+#FUT{
+  background:50% no-repeat;
+  background-size: cover;
+}
+.hr{
+  width: 40%;
+  height: 1px;
+  border-top: 1px solid #c8c8c8;
+  margin: 40px 0;
+}
+.editForm{
+  padding: 10px;
 }

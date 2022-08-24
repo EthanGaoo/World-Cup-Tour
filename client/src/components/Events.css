@@ -1,0 +1,27 @@
+*{box-sizing: border-box;}
+.googleMap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info{
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.contain{
+    --bs-offcanvas-height:50vh;
+}
+.clearButton{
+    background-color: lightgray;
+
+}
