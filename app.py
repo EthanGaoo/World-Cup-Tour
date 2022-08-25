@@ -1,5 +1,3 @@
-
-from unicodedata import category
 from flask import (Flask,jsonify,request,g,session)
 from .db import get_db, close_db
 import os

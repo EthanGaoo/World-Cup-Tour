@@ -52,10 +52,12 @@ useEffect(()=>{
     await res.json();
 
     const filteredEvent = events.filter((event) => {
-      return event._id !== id;
+      return event.id !== id;
     });
+    console.log(id)
+    console.log(filteredEvent)
     setEvents(filteredEvent)
-    navigate("/")
+    // navigate("/")
   };
   const handleEdit = async (id, formData, index) => {
     const editURL = `/activities/${id}`;

@@ -65,11 +65,11 @@ function OffCanvasExample({destination,name, ...props}) {
     if (originRef.current.value === '' || destiantionRef.current.value === '') {
       return
     }
-    const directionsService = new google.maps.DirectionsService()
+    const directionsService = new window.google.maps.DirectionsService()
     const results = await directionsService.route({
       origin: originRef.current.value,
       destination: destiantionRef.current.value,
-      travelMode: google.maps.TravelMode.DRIVING,
+      travelMode: window.google.maps.TravelMode.DRIVING,
     })
     setDirectionsResponse(results)
     setDistance(results.routes[0].legs[0].distance.text)
@@ -148,7 +148,7 @@ function OffCanvasExample({destination,name, ...props}) {
         </Button>
         <Offcanvas show={show} onHide={handleClose} {...props} style={{backgroundColor:'#8a1538'}}>
           <Offcanvas.Body style={{textAlign:"center"}}>
-            <Card style={{marginTop:"250px"}}>
+            <Card>
                 <Card.Img variant="top" src={event.image} style={{height:'192px'}}/>
                   <Card.Body>
                     <Card.Title>{event.name}</Card.Title>
